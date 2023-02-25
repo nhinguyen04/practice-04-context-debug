@@ -1,5 +1,9 @@
 function allTheArgs(func, ...args) {
-  // Your code here
+  return func.bind(null, ...args);
+}
+
+function sum(...nums) {
+  return nums.reduce((acc, num) => acc + num);
 }
 
 /*****************************************************************************/
